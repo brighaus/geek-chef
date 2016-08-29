@@ -22,7 +22,7 @@ var geek_chef = require('../lib/geek-chef.js');
     test.ifError(value)
 */
 
-exports['awesome'] = {
+exports['test_default'] = {
   setUp: function(done) {
     // setup here
     done();
@@ -30,7 +30,7 @@ exports['awesome'] = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(geek_chef.awesome(), 'awesome', 'should be awesome.');
+    test.equal(geek_chef.test_default(), 'test', 'should be "test".');
     test.done();
   },
 };
