@@ -6,15 +6,13 @@
 <head>
   <title>Hello World in AngularJS</title>
 </head>
-<body ng-controller="RecipieController">
+<bod>
 
-<ul>
-  <li ng-repeat="recipie in recipies">
-    <input type="checkbox" ng-model="recipie.completed">
-    {{ recipie.name }}
-  </li>
-</ul>
+<div ng-view></div>
+
 <script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
 <script type="text/javascript" src="app/controllers/Recipie.js"></script>
 </body>
 </html>

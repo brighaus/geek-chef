@@ -1,13 +1,13 @@
-var testTarget = 'RecipieController';
+var testTarget = 'RecipieListDisplayController';
 
 describe(testTarget, function() {
 
     var scope;
     var ctrl;
 
-    beforeEach(module('geek-chef'));
+    beforeEach(angular.mock.module('geek-chef'));
 
-    beforeEach(inject(function($rootScope, $controller) {
+    beforeEach(angular.mock.inject(function($rootScope, $controller) {
         scope = $rootScope.$new();
         ctrl = $controller(testTarget, {$scope: scope});
     }));
