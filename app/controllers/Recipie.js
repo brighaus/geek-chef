@@ -1,16 +1,10 @@
 ;
 (function() {
-    var RecipieListDisplayController = function($scope) {
+    var RecipieListDisplayController = function($scope, RecipieListService) {
         "use strict";
-        $scope.recipies = [{
-            name: 'recipie 1',
-            completed: true
-        }, {
-            name: 'recipie 2',
-            completed: false
-        }, ];
+        $scope.recipies = RecipieListService.recipies;
     };
-    RecipieListDisplayController.$inject = ['$scope'];
+    RecipieListDisplayController.$inject = ['$scope', 'RecipieListService'];
 
     angular.module('geek-chef')
         .controller('RecipieListDisplayController', RecipieListDisplayController);
