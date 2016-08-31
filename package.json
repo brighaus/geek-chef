@@ -18,7 +18,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/brighaus/geek-chef/LICENSE"
+      "url": "https://github.com/brighaus/geek-chef/blob/master/LICENSE"
     }
   ],
   "main": "lib/geek-chef",
