@@ -4,7 +4,6 @@ describe(testTarget, function() {
 
     var scope;
     var ctrl;
-
     beforeEach(angular.mock.module('geek-chef'));
 
     beforeEach(angular.mock.inject(function($rootScope, $controller) {
